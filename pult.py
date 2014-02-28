@@ -56,6 +56,7 @@ class Pult(QtGui.QMainWindow):
         QtCore.QObject.connect(self.ui.chup,QtCore.SIGNAL(u"clicked()"), self.sendChup)
         QtCore.QObject.connect(self.ui.chdw,QtCore.SIGNAL(u"clicked()"), self.sendChdw)
         QtCore.QObject.connect(self.ui.one,QtCore.SIGNAL(u"clicked()"), self.sendOne)
+        QtCore.QObject.connect(self.ui.two,QtCore.SIGNAL(u"clicked()"), self.sendTwo)
         
         
         
@@ -142,6 +143,8 @@ class Pult(QtGui.QMainWindow):
       self.SendS("key ChannelPrev")
     def sendOne(self):
       self.SendS("key 1")
+    def sendTwo(self):
+      self.SendS("key 2")
       
       
 class Ui_Pult(object):
