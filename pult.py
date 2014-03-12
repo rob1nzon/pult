@@ -56,8 +56,16 @@ class Pult(QtGui.QMainWindow):
         QtCore.QObject.connect(self.ui.chup,QtCore.SIGNAL(u"clicked()"), self.sendChup)
         QtCore.QObject.connect(self.ui.chdw,QtCore.SIGNAL(u"clicked()"), self.sendChdw)
         QtCore.QObject.connect(self.ui.one,QtCore.SIGNAL(u"clicked()"), self.sendOne)
-        QtCore.QObject.connect(self.ui.two,QtCore.SIGNAL(u"clicked()"), self.sendTwo)
-        
+        QtCore.QObject.connect(self.ui.three,QtCore.SIGNAL(u"clicked()"), self.sendThree)
+        QtCore.QObject.connect(self.ui.four,QtCore.SIGNAL(u"clicked()"), self.sendFour)
+        QtCore.QObject.connect(self.ui.five,QtCore.SIGNAL(u"clicked()"), self.sendFive)
+        QtCore.QObject.connect(self.ui.six,QtCore.SIGNAL(u"clicked()"), self.sendSix)
+        QtCore.QObject.connect(self.ui.seven,QtCore.SIGNAL(u"clicked()"), self.sendSeven)
+        QtCore.QObject.connect(self.ui.eight,QtCore.SIGNAL(u"clicked()"), self.sendEight)
+        QtCore.QObject.connect(self.ui.nine,QtCore.SIGNAL(u"clicked()"), self.sendNine)
+        QtCore.QObject.connect(self.ui.zero,QtCore.SIGNAL(u"clicked()"), self.sendZero)
+
+      
         
         
         
@@ -145,6 +153,23 @@ class Pult(QtGui.QMainWindow):
       self.SendS("key 1")
     def sendTwo(self):
       self.SendS("key 2")
+    def sendThree(self):
+      self.SendS("key 3")
+    def sendFour(self):
+      self.SendS("key 4")
+    def sendFive(self):
+      self.SendS("key 5")
+    def sendSix(self):
+      self.SendS("key 6")
+    def sendSeven(self):
+      self.SendS("key 7")
+    def sendEight(self):
+      self.SendS("key 8")
+    def sendNine(self):
+      self.SendS("key 9")
+    def sendZero(self):
+      self.SendS("key 0")
+
       
       
 class Ui_Pult(object):
