@@ -3,4 +3,4 @@ pult
 
 Pult
 
-simple python script for remoute control
+simple python script for remote control
